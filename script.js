@@ -3,9 +3,7 @@ const billingToggle = document.getElementById("billingToggle");
 const prices = document.querySelectorAll(".price");
 
 billingToggle.addEventListener("change", function () {
-
     prices.forEach(function (price) {
-
         const monthlyPrice = price.dataset.monthly;
         const yearlyPrice = price.dataset.yearly;
 
@@ -14,14 +12,13 @@ billingToggle.addEventListener("change", function () {
         } else {
             price.innerHTML = `₹${monthlyPrice}<span>/month</span>`;
         }
-
     });
-
 });
+
 const buttons = document.querySelectorAll(".pricing-card button");
-const popup = document.getElementById("popup");
+const popup = document.getElementById("planModal");
 const selectedPlan = document.getElementById("selectedPlan");
-const closePopup = document.getElementById("closePopup");
+const closePopup = document.getElementById("closeModal");
 
 buttons.forEach(function(button) {
     button.addEventListener("click", function() {
@@ -29,10 +26,10 @@ buttons.forEach(function(button) {
                            .querySelector("h2").textContent;
 
         selectedPlan.textContent = "You've selected the " + plan + " Plan!";
-        popup.style.display = "flex";
+        popup.classList.add("show");
     });
 });
 
 closePopup.addEventListener("click", function() {
-    popup.style.display = "none";
+    popup.classList.remove("show");
 });
