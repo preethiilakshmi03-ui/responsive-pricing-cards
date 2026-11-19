@@ -18,3 +18,16 @@ billingToggle.addEventListener("change", function () {
     });
 
 });
+
+const buttons = document.querySelectorAll(".pricing-card button");
+
+buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        const plan = button.closest(".pricing-card")
+                           .querySelector("h2").textContent;
+
+        alert("Thank you for choosing the " + plan +
+              " Plan! Your plan selection is successful.");
+    });
+});
+
