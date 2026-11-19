@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans | Choose Your Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Choose Your Perfect Plan</h1>
+        <p>Simple pricing. Powerful features. Start today!</p>
+    </header>
+
+    <main class="pricing-section">
+
+        <div class="billing-toggle">
+            <span>Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="billingToggle">
+                <span class="slider"></span>
+            </label>
+            <span>Yearly <small>Save 20%</small></span>
+        </div>
+
+        <div class="pricing-container">
+
+            <div class="pricing-card">
+                <h2>Basic</h2>
+                <p>Perfect for beginners</p>
+                <h3 class="price" data-monthly="199" data-yearly="1910">₹199<span>/month</span></h3>
+                <ul>
+                    <li>✓ 5 Projects</li>
+                    <li>✓ Basic Support</li>
+                    <li>✓ 5 GB Storage</li>
+                    <li>✓ Basic Features</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+
+            <div class="pricing-card popular">
+                <div class="badge">POPULAR</div>
+                <h2>Pro</h2>
+                <p>Perfect for professionals</p>
+                <h3 class="price" data-monthly="499" data-yearly="4790">₹499<span>/month</span></h3>
+                <ul>
+                    <li>✓ Unlimited Projects</li>
+                    <li>✓ Priority Support</li>
+                    <li>✓ 50 GB Storage</li>
+                    <li>✓ Advanced Features</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+
+            <div class="pricing-card best">
+                <div class="badge">BEST VALUE</div>
+                <h2>Premium</h2>
+                <p>Perfect for businesses</p>
+                <h3 class="price" data-monthly="999" data-yearly="9590">₹999<span>/month</span></h3>
+                <ul>
+                    <li>✓ Unlimited Projects</li>
+                    <li>✓ 24/7 Support</li>
+                    <li>✓ 200 GB Storage</li>
+                    <li>✓ All Premium Features</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Pricing Plans. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
