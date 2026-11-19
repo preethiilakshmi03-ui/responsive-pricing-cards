@@ -18,16 +18,21 @@ billingToggle.addEventListener("change", function () {
     });
 
 });
-
 const buttons = document.querySelectorAll(".pricing-card button");
+const popup = document.getElementById("popup");
+const selectedPlan = document.getElementById("selectedPlan");
+const closePopup = document.getElementById("closePopup");
 
 buttons.forEach(function(button) {
     button.addEventListener("click", function() {
         const plan = button.closest(".pricing-card")
                            .querySelector("h2").textContent;
 
-        alert("Thank you for choosing the " + plan +
-              " Plan! Your plan selection is successful.");
+        selectedPlan.textContent = "You've selected the " + plan + " Plan!";
+        popup.style.display = "flex";
     });
 });
 
+closePopup.addEventListener("click", function() {
+    popup.style.display = "none";
+});
