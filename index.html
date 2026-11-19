@@ -18,53 +18,81 @@
 
         <div class="billing-toggle">
             <span>Monthly</span>
+
             <label class="switch">
                 <input type="checkbox" id="billingToggle">
                 <span class="slider"></span>
             </label>
+
             <span>Yearly <small>Save 20%</small></span>
         </div>
 
         <div class="pricing-container">
 
+            <!-- Basic Plan -->
             <div class="pricing-card">
                 <h2>Basic</h2>
                 <p>Perfect for beginners</p>
-                <h3 class="price" data-monthly="199" data-yearly="1910">₹199<span>/month</span></h3>
+
+                <h3 class="price"
+                    data-monthly="199"
+                    data-yearly="1910">
+                    ₹199<span>/month</span>
+                </h3>
+
                 <ul>
                     <li>✓ 5 Projects</li>
                     <li>✓ Basic Support</li>
                     <li>✓ 5 GB Storage</li>
                     <li>✓ Basic Features</li>
                 </ul>
+
                 <button>Get Started</button>
             </div>
 
+            <!-- Pro Plan -->
             <div class="pricing-card popular">
                 <div class="badge">POPULAR</div>
+
                 <h2>Pro</h2>
                 <p>Perfect for professionals</p>
-                <h3 class="price" data-monthly="499" data-yearly="4790">₹499<span>/month</span></h3>
+
+                <h3 class="price"
+                    data-monthly="499"
+                    data-yearly="4790">
+                    ₹499<span>/month</span>
+                </h3>
+
                 <ul>
                     <li>✓ Unlimited Projects</li>
                     <li>✓ Priority Support</li>
                     <li>✓ 50 GB Storage</li>
                     <li>✓ Advanced Features</li>
                 </ul>
+
                 <button>Get Started</button>
             </div>
 
+            <!-- Premium Plan -->
             <div class="pricing-card best">
                 <div class="badge">BEST VALUE</div>
+
                 <h2>Premium</h2>
                 <p>Perfect for businesses</p>
-                <h3 class="price" data-monthly="999" data-yearly="9590">₹999<span>/month</span></h3>
+
+                <h3 class="price"
+                    data-monthly="999"
+                    data-yearly="9590">
+                    ₹999<span>/month</span>
+                </h3>
+
                 <ul>
                     <li>✓ Unlimited Projects</li>
                     <li>✓ 24/7 Support</li>
                     <li>✓ 200 GB Storage</li>
                     <li>✓ All Premium Features</li>
                 </ul>
+
                 <button>Get Started</button>
             </div>
 
@@ -75,23 +103,27 @@
         <p>© 2026 Pricing Plans. All Rights Reserved.</p>
     </footer>
 
-    <!-- Neon Popup -->
+    <!-- Success Popup -->
     <div class="modal-overlay" id="popup">
         <div class="modal-box">
             <div class="success-icon">✓</div>
+
             <h2>Awesome Choice!</h2>
-            <p id="selectedPlan">You've selected a plan!</p>
+
+            <p id="selectedPlan">
+                You've selected a plan!
+            </p>
+
             <p class="modal-message">
                 Your journey to something amazing starts here.
                 Thank you for choosing us!
             </p>
+
             <button id="closePopup">Let's Go ✨</button>
         </div>
     </div>
 
-    <!-- JavaScript should load after HTML -->
     <script src="script.js"></script>
 
 </body>
 </html>
-
