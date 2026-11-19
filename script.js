@@ -16,9 +16,9 @@ billingToggle.addEventListener("change", function () {
 });
 
 const buttons = document.querySelectorAll(".pricing-card button");
-const popup = document.getElementById("planModal");
+const popup = document.getElementById("popup");
 const selectedPlan = document.getElementById("selectedPlan");
-const closePopup = document.getElementById("closeModal");
+const closePopup = document.getElementById("closePopup");
 
 buttons.forEach(function(button) {
     button.addEventListener("click", function() {
